@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Color Palette */
+  --bg-primary: #0A0A0A;
+  --bg-secondary: #121212;
+  --accent-gold: #B8860B;
+  --accent-gold-hover: #D4AF37;
+  --accent-gold-glow: rgba(184, 134, 11, 0.25);
+  --accent-gold-border: rgba(184, 134, 11, 0.4);
+  --accent-crimson: #8B0000;
+  --accent-crimson-glow: rgba(220, 20, 60, 0.12);
+  
+  /* Text Colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #E0E0E0;
+  --text-muted: #8E8E93;
+  --text-dark: #0A0A0A;
+
+  /* Typography */
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --container-max-width: 1280px;
+
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
